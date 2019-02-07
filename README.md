@@ -33,10 +33,6 @@ PC configuration used for this project:
   - [Win x32](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
   - [Win x64](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 
-### Implementation details
-
-The following algorithm were implemented and tested on this environment.
-
 #### DQN
 
 **Idea**. Use neural network for Q-value function approximation as `state` -> `action` mapping with the following loss function minimised:
@@ -55,7 +51,7 @@ Neural network architecture:
 | Layer 6 | (32, `action_size`)| - |
 
 ### Results
- - Best model weights are saved under [checkpoint file](https://github.com/pbaginski-datascientist/DRL---Robotic-Item-Collection/checkpoint.pth).
+ - Best model weights are saved under the checkpoint file in the repo.
 
 #### Possible improvements
 
