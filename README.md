@@ -35,7 +35,7 @@ PC configuration used for this project:
 
 #### DQN
 
-**Idea**. Use neural network for Q-value function approximation as `state` -> `action` mapping with the following loss function minimised:
+**Idea**. Use deep neural network for Q-value function approximation as `state` -> `action` mapping. The following loss function is minimized as part of this:
 
 ![equation](http://latex.codecogs.com/gif.latex?MSE%28r_%7Bt&plus;1%7D&plus;%5Cgamma%20%5Cmax_%7Ba%7DQ%5Et%28s_%7Bt&plus;1%7D%2C%20a%29-Q%28s_%7Bt%7D%2C%20a_%7Bt%7D%29%29)
 
@@ -55,5 +55,7 @@ Neural network architecture:
 
 #### Possible improvements
 
-- Use Noisy Nets instead of e-greedy policy. This modification shows improvements over conventional e-greedy learning and reduces the number of hyperparameters to tune. 
-- Reward shaping. When the agent is trained enough getting 2nd banana after the 1st one is expected and almost always happens, whereas getting 21st banana after 20th is the achievement. Therefore, the agent could get higher reward in case of improving its result with respect to the expected one.
+Multiple potential improvements to this method are available and have been researched:
+- Exchanging the epsilon greedy action selection for a more systematic method such as another neural network for best epsilon selection.
+- Providing dynamic reward maps to the agent
+- Using abbreviations of the above algorithm, namely Double DQN, Dueling DQN, Prioritized Experience Replay, Fixed-Q-Targets, or even the ultimate DQN version called Rainbow DQN.
