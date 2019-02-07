@@ -1,8 +1,6 @@
 # DRL---Robotic-Item-Collection
 Training an agent to collect items in a large square world using deep reinforcement learning
 
-![Navigation](https://github.com/SIakovlev/Navigation/blob/master/results/navigation_short.gif)
-
 ### Project description
 
 For this project, the task is to train an agent to navigate in a large, square world, while collecting yellow bananas, and avoiding blue bananas. A reward of `+1` is provided for collecting a yellow banana, and a reward of `-1` is provided for collecting a blue banana. Thus, the goal is to collect as many yellow bananas as possible while avoiding blue bananas.
