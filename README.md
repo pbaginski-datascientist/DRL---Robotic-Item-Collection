@@ -54,7 +54,7 @@ Neural network architecture:
 | Layer 3 | (128, 128)| `relu` |
 | Layer 4 | (128, 64) | `relu` |
 | Layer 5 | (64, 32)  | `relu` |
-| Layer 5 | (32, `action_size`)| - |
+| Layer 6 | (32, `action_size`)| - |
 
 ### Results
  - Best model weights are saved under [checkpoint file](https://github.com/pbaginski-datascientist/DRL---Robotic-Item-Collection/checkpoint.pth).
