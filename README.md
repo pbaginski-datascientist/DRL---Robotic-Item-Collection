@@ -39,13 +39,13 @@ PC configuration used for this project:
 
 3. Place the file in `bin/` directory, and unzip (or decompress) the file.
 
-# Instructions
+#### Instructions
 To train the agent, start jupyter notebook, open `Navigation.ipynb`
 and execute! For more information, please check instructions
 inside the notebook.
 
 
-#### DQN
+### Deep Q-Learning High-Level Architecture
 
 **Idea**. Use deep neural network for Q-value function approximation as `state` -> `action` mapping. The following loss function is minimized as part of this:
 
